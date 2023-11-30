@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <title>Lab10c</title>
+        <link href="/dist/output.css" rel="stylesheet">
+    </head>
+
+    <body class="bg-gray-200 text-gray-800 font-mono">
+
+        <div class="flex justify-center my-5">
+            <h1 class="font-bold text-3xl">TAILWIND (CSS FRAMEWORK)</h1>
+        </div>
+
+        <!-- main container -->
+        <div class="grid grid-cols-3">
+
+            <!-- box holding explanation on how I installed the framework -->
+            <div class="px-8">
+                <span class="font-bold">Step 1</span>
+                <p>The installation process was fairly simple, I followed the guide on the <a href="https://tailwindcss.com/docs/installation" class="text-blue-500">documentation site</a>. Before following any of the steps, I had to install NodeJS using homebrew since i'm on MacOS.</p>
+                <br>
+                <span class="font-bold">Step 2</span>
+                <p>Using NodeJS (npm init -y), I was able to use npm to install tailwindcss and create the initial config file using npx.</p>
+                <br>
+                <p>>npm install -D tailwindcss <br> >npx tailwindcss init</p>
+                <br>
+                <span class="font-bold">Step 3</span>
+                <p>Added this line to the config file to tell tailwind to apply styles to all html and js files in a given directory (the directory src in this case).</p>
+                <br>
+                <p>content: ["./src/**/*.{html,js}"],</p>
+                <br>
+                <span class="font-bold">Step 4</span>
+                <p>Create the directory src and create a file called input.css. Add these lines to the file to apply tailwind styles.</p>
+                <br>
+                <p>@tailwind base;<br>@tailwind components;<br>@tailwind utilities;</p>
+                <br>
+                <span class="font-bold">Step 5</span>
+                <p>Run the line below in the terminal to build the output files in a new directory called dist. This line also constantly watches for updates within our styles which will be useful when we add custom fonts, or our custom styles.</p>
+                <br>
+                <p>>npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch</p>
+                <br>
+                <span class="font-bold">Step 6</span>
+                <p>Now you're all setup! Make your first html file in the src directory and test the tailwind styles by calling the tailwind classes on any element.</p>
+            </div>
+
+            <!-- box holding how i built the page -->
+            <div class="px-8">
+                <span class="font-bold">How I built the page!</span>
+                <p>The page was actually very simple to create. Tailwindcss is very simple to use and understand, the <a href="https://v2.tailwindcss.com/docs" class="text-blue-500">documentation page</a> is very helpful, it shows good examples of how it is used. Tailwindcss is good for building responsive websites, every single style works with responsive media queries. Check out the site that I created while learning how to use tailwind!</p>
+                <br>
+                <div class="flex justify-center">
+                    <a href="index.html" class="rounded-full py-2 px-3 text-lg font-bold cursor-pointer border-black border-2 hover:bg-black hover:text-gray-100 transition-all duration-300 ease-in-out">GO TO MAIN PAGE</a>
+                </div>
+            </div>
+
+            <!-- box holding explanation on difficulties -->
+            <div class="px-8">
+                <span class="font-bold">Difficulties</span>
+                <p>This was my first time learing a new framework by myself and although it was easy to understand the syntax, I still encountered quite a bit of difficulties. The first issue that I encountered was when I tried to apply styles to my text but nothing would work, I resolved this issue by moving my html file back into the src directory. In my tailwind config file it has all of my html and js files selected in src so when I moved them out of the directory, tailwind didn't apply until I either changed the config file or if I moved the files back in.</p>
+                <br>
+                <p>My next issue occurred when I tried to install my own custom font. I would have the proper syntax in my output and config files but I exited the watch command that would rebuild the output and input files whenever there were any updates made. I also didn't know I had to rebuild the files until a lot of googling and debugging. </p>
+            </div>
+        </div>
+    </body>
+</html>

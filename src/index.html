@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lab10c</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="font-lato">
+
+  <div class="grid md:grid-cols-3">
+
+    <!-- Nav Bar -->
+    <div class="md:col-span-1 md:flex md:justify-end">
+      <nav class="text-right">
+        <div class="flex justify-between items-center">
+          <h1 class="font-bold text-gray-700 p-4 text-2xl uppercase border-b border-gray-200 hover:text-gray-500">
+            <a href="#">Joseph Leung</a>
+          </h1>
+          <div class="px-4 cursor-pointer md:hidden" id="menuBurger">
+            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>            
+          </div>
+        </div>
+
+        <ul class="text-sm mt-6 hidden md:block" id="menu">
+          <li class="py-1 hover:font-bold">
+            <a href="#" class="px-4 flex justify-end">
+              <span>Home</span>
+              <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="py-1 hover:font-bold">
+            <a href="partc.html" class="px-4 flex justify-end">
+              <span>Go Back</span>
+              <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+              </svg>
+              
+            </a>
+          </li>
+
+          <li class="py-1 hover:font-bold">
+            <a href="https://www.linkedin.com/in/josephleung1/" target="blank" class="px-4 pb-4 flex justify-end">
+              <span>Contact</span>
+              <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
+              
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+      <header>
+        <h2 class="text-gray-800 text-3xl font-semibold">CPS530</h2>
+      </header>
+
+      <div class="mb-10">
+        <h3 class="text-gray-600 text-2xl mt-12 mb-6 font-semibold border-b border-gray-200">Labs</h3>
+
+        <!-- grid containing columns of 3 cards each -->
+        <div class="grid lg:grid-cols-3 gap-10">
+          <!-- cards section -->
+
+          <div class="card hover:shadow-2xl hover:rounded-2xl transition-all duration-300 ease-in-out">
+            <a href="https://www.cs.ryerson.ca/~j85leung/lab1and2/lab01.html" target="blank">
+              <img src="/images/lab1.png" alt="lab1img" class="w-full h-44 lg:h-56 object-cover">
+            </a>
+            <div class="m-4">
+              <span class="font-bold">Lab01</span>
+              <span class="block text-gray-500 text-sm">September 27th, 2023</span>
+            </div>
+          </div>
+
+          <div class="card hover:shadow-2xl hover:rounded-2xl transition-all duration-300 ease-in-out">
+            <a href="https://www.cs.ryerson.ca/~j85leung/lab1and2/lab02.html" target="blank">
+              <img src="/images/lab2.png" alt="lab2img" class="w-full h-44 lg:h-56 object-cover">
+            </a>
+            <div class="m-4">
+              <span class="font-bold">Lab02</span>
+              <span class="block text-gray-500 text-sm">October 4th, 2023</span>
+            </div>
+          </div>
+
+          <div class="card hover:shadow-2xl hover:rounded-2xl transition-all duration-300 ease-in-out">
+            <a href="https://www.cs.ryerson.ca/~j85leung/lab3/lab03.html" target="blank">
+              <img src="/images/lab3.png" alt="lab3img" class="w-full h-44 lg:h-56 object-cover">
+            </a>
+            <div class="m-4">
+              <span class="font-bold">Lab03</span>
+              <span class="block text-gray-500 text-sm">October 18th, 2023</span>
+            </div>
+          </div>
+
+          <div class="card hover:shadow-2xl hover:rounded-2xl transition-all duration-300 ease-in-out">
+            <a href="https://www.cs.ryerson.ca/~j85leung/lab4/lab04.html" target="blank">
+              <img src="/images/lab4.png" alt="lab4img" class="w-full h-44 lg:h-56 object-cover">
+            </a>
+            <div class="m-4">
+              <span class="font-bold">Lab04</span>
+              <span class="block text-gray-500 text-sm">October 25th, 2023</span>
+            </div>
+          </div>
+
+          <div class="card hover:shadow-2xl hover:rounded-2xl transition-all duration-300 ease-in-out">
+            <a href="https://www.cs.ryerson.ca/~j85leung/lab5/lab05.html" target="blank">
+              <img src="/images/lab5.png" alt="lab5img" class="w-full h-44 lg:h-56 object-cover">
+            </a>
+            <div class="m-4">
+              <span class="font-bold">Lab05</span>
+              <span class="block text-gray-500 text-sm">November 1st, 2023</span>
+            </div>
+          </div>
+
+          <div class="card hover:shadow-2xl hover:rounded-2xl transition-all duration-300 ease-in-out">
+            <a href="https://www.cs.ryerson.ca/~j85leung/lab6/lab06.html" target="blank">
+              <img src="/images/lab6.png" alt="lab6img" class="w-full h-44 lg:h-56 object-cover">
+            </a>
+            <div class="m-4">
+              <span class="font-bold">Lab06</span>
+              <span class="block text-gray-500 text-sm">November 8th, 2023</span>
+            </div>
+          </div>
+
+          <div class="card hover:shadow-2xl hover:rounded-2xl transition-all duration-300 ease-in-out">
+            <a href="https://www2.cs.ryerson.ca/~j85leung/cgi-bin/lab07b.html" target="blank">
+              <img src="/images/lab7.png" alt="lab7img" class="w-full h-44 lg:h-56 object-cover">
+            </a>
+            <div class="m-4">
+              <span class="font-bold">Lab07</span>
+              <span class="block text-gray-500 text-sm">November 18th, 2023</span>
+            </div>
+          </div>
+
+          <div class="card hover:shadow-2xl hover:rounded-2xl transition-all duration-300 ease-in-out">
+            <a href="https://www.cs.ryerson.ca/~j85leung/lab8/lab08.php" target="blank">
+              <img src="/images/lab8.png" alt="lab8img" class="w-full h-44 lg:h-56 object-cover">
+            </a>
+            <div class="m-4">
+              <span class="font-bold">Lab08</span>
+              <span class="block text-gray-500 text-sm">November 22nd, 2023</span>
+            </div>
+          </div>
+
+          <div class="card hover:shadow-2xl hover:rounded-2xl transition-all duration-300 ease-in-out">
+            <a href="https://webdev.cs.torontomu.ca/~j85leung/lab09e.php" target="blank">
+              <img src="/images/lab9.png" alt="lab9img" class="w-full h-44 lg:h-56 object-cover">
+            </a>
+            <div class="m-4">
+              <span class="font-bold">Lab09 (Requires CS VPN)</span>
+              <span class="block text-gray-500 text-sm">December 4th, 2023</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
